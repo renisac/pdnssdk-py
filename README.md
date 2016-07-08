@@ -1,5 +1,9 @@
 # Getting Started
 
+```bash
+$ pip install https://github.com/renisac/pdnssdk-py/archive/master.tar.gz
+```
+
 # Getting Involved
 There are many ways to get involved with the project. If you have a new and exciting feature, or even a simple bugfix, simply [fork the repo](https://help.github.com/articles/fork-a-repo), create some simple test cases, [generate a pull-request](https://help.github.com/articles/using-pull-requests) and give yourself credit!
 
