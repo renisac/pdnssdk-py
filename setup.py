@@ -30,6 +30,7 @@ setup(
         'pyaml>=15.03.1',
         'requests>=2.6.0',
         'urllib3>=1.10.2',
+        'pytest>=2.9.2',
     ],
     scripts=[],
     entry_points={
