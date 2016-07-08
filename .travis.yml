@@ -1,0 +1,14 @@
+sudo: required
+dist: trusty
+language: python
+python:
+    - 2.7
+#    - 3.4
+
+script:
+    - py.test test
+
+notifications:
+    email:
+        on_success: never
+        on_failure: never

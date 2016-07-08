@@ -1,0 +1,2 @@
+include versioneer.py
+include ri_pdnssdk/_version.py
