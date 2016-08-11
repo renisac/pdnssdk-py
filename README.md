@@ -2,7 +2,7 @@
 
 ```bash
 $ pip install https://github.com/renisac/pdnssdk-py/archive/master.tar.gz
-$ export PDNS_REMOTE="pdns.ren-isac.net"
+$ export PDNS_REMOTE="https://pdns.ren-isac.net"
 $ pdns -q 129.79.214.150 [--remote pdns.ren-isac.net]
 ```
 
