@@ -12,7 +12,7 @@ from ._version import get_versions
 VERSION = get_versions()['version']
 del get_versions
 
-REMOTE_ADDR = os.environ.get('PDNS_REMOTE', 'http://127.0.0.1:5000')
+REMOTE_ADDR = os.environ.get('PDNS_REMOTE', 'https://pdns.ren-isac.net')
 TOKEN = os.environ.get('PDNS_TOKEN')
 SEARCH_LIMIT = os.environ.get('PDNS_SEARCH_LIMIT', 500)
 LOG_FORMAT = '%(asctime)s - %(levelname)s - %(name)s[%(lineno)s][%(threadName)s] - %(message)s'
