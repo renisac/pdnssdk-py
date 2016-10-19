@@ -127,8 +127,8 @@ def main():
                 r.append(d.get(c))
 
             t.add_row(r)
-
-        print(t)
+            
+        print(t.get_string(sortby='last', reversesort=True))
 
 
 if __name__ == "__main__":
