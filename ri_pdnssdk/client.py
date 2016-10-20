@@ -70,7 +70,7 @@ class Client(object):
         return json.loads(body.content)
 
     def search(self, q, limit=SEARCH_LIMIT):
-        rv = self._get('/search', params={'q': q})
+        rv = self._get('/search', params={'q': q, 'limit': limit})
         return rv['data']
 
 
@@ -110,7 +110,7 @@ def main():
 
     logger.info("searching for {0}".format(args.search))
     try:
-        rv = cli.search(args.search)
+        rv = cli.search(args.search, limit=args.limit)
     except RuntimeError as e:
         import traceback
         traceback.print_exc()
@@ -128,7 +128,7 @@ def main():
 
             t.add_row(r)
             
-        print(t.get_string(sortby='last', reversesort=True))
+        print(t.get_string(sortby='last'))
 
 
 if __name__ == "__main__":
