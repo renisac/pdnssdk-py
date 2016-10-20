@@ -60,7 +60,7 @@ class Client(object):
                 raise TimeoutError('timeout')
             else:
                 try:
-                    # err = json.loads(body.content).get('message')
+                    err = json.loads(body.text).get('message')
                     raise RuntimeError(err)
                 except ValueError as e:
                     err = body.content
