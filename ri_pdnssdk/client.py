@@ -60,14 +60,14 @@ class Client(object):
                 raise TimeoutError('timeout')
             else:
                 try:
-                    err = json.loads(body.content).get('message')
+                    # err = json.loads(body.content).get('message')
                     raise RuntimeError(err)
                 except ValueError as e:
                     err = body.content
                     logger.error(err)
                     raise RuntimeError(err)
 
-        return json.loads(body.content)
+        return json.loads(body.text)
 
     def search(self, q, limit=SEARCH_LIMIT):
         rv = self._get('/search', params={'q': q, 'limit': limit})
