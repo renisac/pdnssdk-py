@@ -7,7 +7,7 @@ if os.environ.get('USER') == 'vagrant' or os.path.isdir('/vagrant'):
     del os.link
 
 setup(
-    name="ri-pdnssdk",
+    name="ri_pdnssdk",
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     description="RI PassiveDNS SDK",
