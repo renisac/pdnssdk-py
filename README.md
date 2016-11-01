@@ -1,8 +1,8 @@
 # Getting Started
 
 ```bash
-$ pip install https://github.com/renisac/pdnssdk-py/archive/master.tar.gz
-$ pdns -q 129.79.214.150 [--remote pdns.ren-isac.net]
+$ pip install ri_pdnssdk
+$ pdns -q 129.79.214.150
 ```
 
 # Getting Involved
