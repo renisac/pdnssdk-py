@@ -23,7 +23,7 @@ logger = logging.getLogger()
 
 class Client(object):
 
-    def __init__(self, remote=REMOTE_ADDR, token='', proxy=None, timeout=300, verify_ssl=True):
+    def __init__(self, remote=REMOTE_ADDR, token=TOKEN, proxy=None, timeout=300, verify_ssl=True):
 
         self.proxy = proxy
         self.timeout = timeout
