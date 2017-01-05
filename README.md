@@ -2,6 +2,7 @@
 
 ```bash
 $ pip install ri_pdnssdk
+$ export PDNS_TOKEN=1234
 $ pdns -q 129.79.214.150
 ```
 
