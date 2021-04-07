@@ -21,7 +21,7 @@ sudo make install
 cd /home/vagrant/
 virtualenv --python=/usr/local/lib/python2.7.11/bin/python ri_dnsdb_client-python_2.7.11
 source /home/vagrant/ri_dnsdb_client-python_2.7.11/bin/activate
-pip install https://github.com/renisac/pdnssdk-py/archive/master.tar.gz
+pip install https://github.com/renisac/pdnssdk-py/archive/main.tar.gz
 echo "source /home/vagrant/ri_dnsdb_client-python_2.7.11/bin/activate" >> /home/vagrant/.bashrc
 echo "export PDNS_REMOTE=https://pdns.ren-isac.net" >> /home/vagrant/.bashrc
 SCRIPT
